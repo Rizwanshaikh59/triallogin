@@ -1,0 +1,107 @@
+/* Default styles */
+body {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-up-form {
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    margin-top: 6%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 7px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    outline: none;
+    background: black;
+    color: green;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+form button:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: red;
+    border: black;
+    animation: both;
+}
+
+.sign-up-form p {
+    color: grey;
+}
+
+.sign-up-form p a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .sign-up-form {
+        width: 90%; /* Adjust width for mobile */
+        height: auto; /* Adjust height for mobile */
+        margin-top: 10%;
+    }
+
+    form {
+        width: 100%; /* Ensure form takes full width */
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+
+    form label {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    form input {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    form button {
+        padding: 8px 20px; /* Adjust button padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}

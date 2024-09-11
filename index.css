@@ -1,0 +1,443 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---------Body Section Edit--------*/
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------Body Section Style--------*/
+header {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*---------Nav full items under navigation Section Style--------*/
+nav {
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed; /* Position Kahi Nhi Jayegi Nav bar ki */
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/*---------logo Section Style--------*/
+.logo {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    color: #6C48C5;
+    font-weight: bold;
+}
+
+/*---------logo span Section Style--------*/
+.logo span {
+    color: #FF8343;
+}
+
+/*---------menu anchor tag design Section Style--------*/
+.menu a {
+    text-decoration: none;
+    color: #088395;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+/*---------menu anchor tag first child home button design Section Style--------*/
+.menu a:first-child {
+    color: #1E0342;
+}
+
+/*---------menu anchor tag hover effect design Section Style--------*/
+.menu a:hover {
+    color: blue;
+}
+
+/*---------Icon design Section Style--------*/
+.icon i {
+    font-size: 20px;
+}
+
+/*---------Icon Hover Effect design Section Style--------*/
+.icon i:hover {
+    color: blue;
+}
+
+/*---------Login Button design Section Style--------*/
+.icon a {
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.icon a:hover {
+    background: linear-gradient(green, blue, black);
+    color: white;
+}
+
+/*---------Section content design Section Style--------*/
+.h-text {
+    color: antiquewhite;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* perfectly Center Mai Laane Ke Liye */
+    text-align: center;
+}
+
+/*---------Icon design Section Style--------*/
+#house {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/*---------Heading design Section Style--------*/
+.h-text h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+/*---------Input design Section Style--------*/
+.h-text input {
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+/*---------Button design Section Style--------*/
+.h-text button {
+    width: 30%;
+    padding: 20px;
+    background: red;
+    color: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*-----End Of Header Section Css-------*/
+
+/*-----Filter Gallery Edit-------*/
+.filter-gallery {
+    padding: 100px;
+}
+
+.portfolio-menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-menu ul li {
+    list-style: none;
+    display: inline-block; /* ek Line Mai Laane Ke Liye */
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.portfolio-menu ul li:hover {
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+li.active {
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+/*-------------Portfolio Items-----------*/
+.portfolio-item {
+    width: 100%;
+}
+
+.portfolio-item .item {
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.portfolio-item .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*-------------Footer Section Edit---------------*/
+.member {
+    width: 100%;
+    padding: 20px 100px;
+    font-family: sans-serif;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info h1 {
+    font-size: 2.5em;
+}
+
+.member-info h1 span {
+    color: red;
+}
+
+.member-card {
+    text-align: center;
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.icon-container {
+    cursor: pointer;
+}
+
+.member-card p {
+    margin: 20px 0px;
+    line-height: 2em;
+}
+
+.m-images {
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.m-images img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.m-images img:hover {
+    transform: scale(1.5);
+}
+
+/*----------------------------Real Footer------------------------------*/
+footer {
+    width: 100%;
+    background: #262626;
+    padding: 50px 100px;
+}
+
+.news-letter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: aliceblue;
+}
+
+.news-letter > div {
+    flex-basis: 50%;
+}
+
+.ntext {
+    text-align: right;
+}
+
+.news-letter h2 {
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.news-letter p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.news-letter label {
+    position: relative;
+}
+
+.news-letter input {
+    padding: 20px;
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.news-letter button {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 30%;
+    background: red;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+/*--------------------------Informatin conntent Footer--------------*/
+.f-contact {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.f-contact > div {
+    flex-basis: 20%;
+}
+
+.f-contact p {
+    line-height: 2em;
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.f-contact p:hover {
+    color: whitesmoke;
+}
+
+.f-contact i {
+    background: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 5px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.f-contact i:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* डेस्कटॉप के लिए स्टाइल्स */
+@media (min-width: 1024px) {
+    .header {
+        width: 70%;
+    }
+}
+
+/* टैबलेट के लिए स्टाइल्स */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        width: 90%;
+    }
+}
+
+/* छोटे टैबलेट और मोबाइल के लिए स्टाइल्स */
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    nav {
+        padding: 0px 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .filter-gallery {
+        padding: 50px;
+    }
+
+    .portfolio-menu ul li {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .portfolio-item .item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .member {
+        padding: 20px;
+    }
+
+    .member-card {
+        width: 90%;
+    }
+
+    .news-letter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-letter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .news-letter button {
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .f-contact {
+        flex-direction: column;
+    }
+
+    .f-contact > div {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}

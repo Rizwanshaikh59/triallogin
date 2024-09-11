@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body>
+    <h1>Welcome to Your Profile!</h1>
+    <p>Username: <span id="user-name"></span></p>
+    <p>Email: <span id="user-email"></span></p>
+    <button id="logoutButton">Logout</button>
+
+    <script>
+        // पहले से स्टोर किया हुआ यूज़रनेम और ईमेल प्राप्त करना
+        var loggedIn = localStorage.getItem('loggedIn');
+        var storedUsername = localStorage.getItem('storedUsername');
+        var storedEmail = localStorage.getItem('storedEmail');
+
+        // अगर यूज़र लॉगिन है, तो यूज़रनेम और ईमेल दिखाना
+        if(loggedIn && storedUsername && storedEmail) {
+            document.getElementById('user-name').innerText = storedUsername;
+            document.getElementById('user-email').innerText = storedEmail;
+        } else {
+            // अगर लॉगिन नहीं है, तो लॉगिन पेज पर रीडायरेक्ट करना
+            window.location.href = "login.html";
+        }
+
+        // लॉगआउट करने के लिए
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            localStorage.removeItem('loggedIn'); // लॉगिन स्टेटस हटाना
+            window.location.href = "login.html"; // लॉगिन पेज पर वापस जाना
+        });
+    </script>
+</body>
+</html>
